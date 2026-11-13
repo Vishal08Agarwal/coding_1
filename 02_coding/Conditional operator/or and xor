@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+int z=5&2;
+cout<<z;
+int y=4|2;
+cout<<y;
+int x=7^2;
+cout<<x;
+return 0;   
+}

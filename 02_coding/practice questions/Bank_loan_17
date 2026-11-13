@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int age,sal,cs,cl;
+    cin>>age>>sal>>cs>>cl;
+    if(age>=21&&age<=60&&sal>=25000&&(cs>=700||cl==1)){
+    cout<<"Loan is approved";
+    }
+    else{
+        if(age<21||age>60)
+        cout<<"Age should be in between 21 and 60"<<endl;
+        if(sal<25000)
+        cout<<"Salary is below 25000"<<endl;
+        if(cs<700)
+        cout<<"Credit score is below 700"<<endl;
+        if(cl!=1)
+        cout<<"no collateral "<<endl;
+    }
+    return 0;
+}

@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+int b=5,h=0;
+while(b<=1000000)
+{
+    cout <<"After "<<h<< " hour bacteria will be "<<b;
+    h++;
+    b=b*2;
+    cout<<endl;
+}
+cout<<"Stop the experiment after "<<h<<" hour";
+return 0;
+}
