@@ -1,8 +1,0 @@
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-int z=~10;
-cout<<z;
-return 0;   
-}

@@ -1,9 +1,0 @@
-#include <iostream>
-using namespace std;
-int main()
-{
-int no;
-cin>>no;
-(((no%400)==0)||((no%4)==0)&&((no%100)=!0))?cout<<"leap year":cout<<"not a leap year";
-return 0;   
-}
