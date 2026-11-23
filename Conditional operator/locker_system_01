@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int age,id,staff,blc;
+	cin>>age;
+	cin>>id>>staff>>blc;
+	if((age>=18 && id==1)||(staff==1 && blc==1))
+	{
+	    std::cout << "open" << std::endl;
+	}
+	else
+	cout<<"denied";
+	return 0;
+}

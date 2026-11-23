@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int smallest=INT_MAX;
+    int num[]={3,-5,1,34,2};
+    int size =sizeof(num)/sizeof(int);
+    for(int i=0;i<size;i++){
+    smallest=min(num[i],smallest);
+    }
+    cout<<smallest<<endl;
+}

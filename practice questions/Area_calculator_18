@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() { //invalid for 0 or negative value
+    double area,r,l,b,a,c,s;
+    int x;
+    cin>>x;
+    switch (x){
+    case 1:
+    cout<<"Enter radius of circle"<<endl;
+    cin>>r;
+    if(r<=0)
+    cout<<"invalid input";
+    area=3.14*r*r;
+    cout<<area;
+    break;
+    case 2:
+    cout<<"Enter length and breath of rectangle"<<endl;
+    cin>>l>>b;
+    if(l<=0||b<=0)
+    cout<<"invalid input";
+    area=l*b;
+    cout<<area;
+    break;
+    case 3:
+    cout<<"Enter three sides of triangle "<<endl;
+    cin>>a>>b>>c;
+    if(a<=0||b<=0||c<=0)
+    cout<<"invalid input";
+    s=(a+b+c)/2;
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    cout<<area;
+    break;
+    case 4:
+    cout<<"Enter sides  of square"<<endl;
+    cin>>s;
+    if(s<=0)
+    cout<<"invalid input";
+    area=s*s;
+    cout<<area;
+    break;
+    default:
+    cout<<"invalid input";
+    }
+    return 0;
+}

@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int meb;
+	double bill;
+	cout<<"enter your bill";
+	cout<<"enter '0' if you area a member else enter '1' "<<endl;
+	cin>>bill>>meb;
+	(bill>5000)?(meb==1)?cout<<(bill-(bill*10)/100)-200:cout<<(bill-(bill*10)/100):cout<<bill;
+	return 0;
+}

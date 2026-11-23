@@ -1,0 +1,8 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int num[]={3,-5,1,34,2};
+    int size =sizeof(num)/sizeof(int);
+    cout<<size;
+}

@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int d,m,y;
+    cin>>d>>m>>y;
+    if(y<1||d<1||m<1||m>12){
+    cout<<"invalid date";
+    return 0;}
+    bool leap=(y%4==0&&y%100!=0||y%400==0);
+    int days;
+    switch(m){
+    case 4:case 6:case 9:case 11:
+    days=30;
+    break;
+    case 2:
+    days=leap? 29: 28;
+    break;
+    default:
+    days=31;
+    }
+    if(d<=days)   
+    cout<<" valid date";
+    else
+    cout<<"invalid date";
+return 0;
+}

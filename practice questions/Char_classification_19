@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() { //invalid for 0 or negative value
+    char c;
+    cin>>c;
+    switch (c){
+    case '1':case '2':case '3':case '4':case '5':case '6':case '7':case '8':case '9':case '0':
+    cout<<"Character is a Digit"<<endl;
+    break;
+    case 'a':case 'e':case 'i':case 'o':case 'u':case 'A':case 'E':case 'I':case 'O':case 'U':
+    cout<<"Character is a Vowel"<<endl;
+    break;
+    default:
+    if(c>='A'&&c<='z')
+    cout<<"Character is a Consonent";
+    else
+    cout<<"special character";
+    }
+    return 0;
+}
