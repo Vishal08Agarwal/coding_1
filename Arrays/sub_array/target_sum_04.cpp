@@ -19,7 +19,7 @@ return ans;
                  
 int main() {
     int n=4;
-    int ms=0,cs=0,tar;
+    int tar;
     cin>>tar;
     vector<int> arr={2,7,11,15};
     vector<int> ans=pairsum(arr,tar);
