@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int num[]={3,-5,1,34,2};
+    int size =sizeof(num)/sizeof(int);
+        int min=INT_MAX,max=INT_MIN,mi,ma;
+    for(int i=0;i<size;i++){
+         if(min>num[i]){
+             min=num[i];
+             mi=i;
+         }
+         
+         if(max<num[i]){
+             max=num[i];
+             ma=i;
+         }
+    }
+    swap(num[mi],num[ma]);
+    for(int i=0;i<size;i++){
+    cout<<num[i]<<", " ;
+    }
+    return 0;
+}
